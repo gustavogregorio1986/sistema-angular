@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <div class="navbar-brand">MyApp</div>
+  <button class="navbar-toggle" (click)="toggleMenu()">
+    &#9776; <!-- Ícone de menu -->
+  </button>
+  <ul [class.active]="isMenuOpen" class="navbar-menu">
+    <li><a [routerLink]="['/']">Home</a></li>
+    <li><a [routerLink]="['/sobre']">Sobre</a></li>
+    <li><a [routerLink]="['/estudo']">Estudo</a></li>
+    <li><a [routerLink]="['/contato']">Contato</a></li>
+  </ul>
+</nav>
